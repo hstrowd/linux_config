@@ -95,7 +95,7 @@ alias l='ls -CF'
 alias vpncnu='sudo vpnc-connect --gateway cnuvpn.cashnetusa.com --id cnu-ra-users --username hstrowd --domain cnu --natt-mode natt' 
 
 # ack alias
-alias ack='ack --type-add TYPE=.tpl'
+alias ack='ack -a'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
