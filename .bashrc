@@ -91,21 +91,6 @@ alias ll='ls -lA'
 alias la='ls -A'
 alias l='ls -CF'
 
-# some other alaiases
-alias ew='cd /export/web'
-alias ewc='cd /export/web/cnuapp'
-
-# service aliases
-alias svu='sudo sv u /var/service/*'
-alias svd='sudo sv d /var/service/*'
-alias svr='svd && svu'
-
-# cnuapp cmd aliases
-alias sc='/export/web/cnuapp/script/console'
-alias bcr='/export/web/cnuapp/bin/cnurake'
-alias bce='/export/web/cnuapp/bin/cnu_env'
-alias vimce='vim /etc/cnu/cnu_env'
-
 # vpn alias
 alias vpncnu='sudo vpnc-connect --gateway cnuvpn.cashnetusa.com --id cnu-ra-users --username hstrowd --domain cnu --natt-mode natt' 
 
@@ -119,6 +104,5 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-export P4CONFIG=~/.p4config
-export P4EDITOR='vim'
-export PATH="/sbin:${HOME}/bin:${HOME}/bin/p4v-2009.2.258241/bin:/cnu/bin:${HOME}/dev/scripts:${PATH}"
+# Include any local configurations.
+. ~/.bashrc_local
