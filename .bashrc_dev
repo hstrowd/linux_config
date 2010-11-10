@@ -8,6 +8,9 @@ alias ewc='cd /export/web/cnuapp'
 alias svu='sudo sv u /var/service/*'
 alias svd='sudo sv d /var/service/*'
 alias svr='svd && svu'
+alias svul='sudo sv u /var/service/lsws'
+alias svdl='sudo sv d /var/service/lsws'
+alias svrl='svdl && svul'
 
 # cnuapp cmd aliases
 alias sc='/export/web/cnuapp/script/console'
