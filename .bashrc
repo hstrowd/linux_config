@@ -97,6 +97,10 @@ alias vpncnu='sudo vpnc-connect --gateway cnuvpn.cashnetusa.com --id cnu-ra-user
 # ack alias
 alias ack='ack-grep -a'
 
+# du alias
+alias du='du -hsc'
+alias sdu='sudo du -hsc'
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
