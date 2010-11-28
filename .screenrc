@@ -1,7 +1,6 @@
 shell -${SHELL}
 defscrollback 1024
 # caption always "%n(%t) : %C"
-caption off
 startup_message off
 hardstatus off
 hardstatus alwayslastline
