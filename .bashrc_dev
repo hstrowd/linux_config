@@ -33,6 +33,8 @@ export PATH="/sbin:${HOME}/bin:${HOME}/bin/p4v-2009.2.258241/bin:/cnu/bin:${HOME
 
 # cnuapp slave DB connections
 alias slave_us='psql -h slavedb.cashnetusa.com -p 5432 cnuapp_prod hstrowd'
+alias slave_us2='psql -h slavedb2.cashnetusa.com -p 5432 cnuapp_prod hstrowd'
+alias slave_us3='psql -h slavedb3.cashnetusa.com -p 5432 cnuapp_prod hstrowd'
 alias slave_gb='psql -h slavedb.quickquid.co.uk -p 5432 cnuapp_prod_uk hstrowd'
 alias slave_au='psql -h slavedb.dollarsdirect.com.au -p 5432 cnuapp_prod_au hstrowd'
 alias slave_ca='psql -h slavedb.dollarsdirect.ca -p 5432 cnuapp_prod_ca hstrowd'
