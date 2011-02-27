@@ -21,6 +21,9 @@ alias svusp='sudo sv u /var/service/space'
 alias svdsp='sudo sv d /var/service/space'
 alias svrsp='svdsp && svusp'
 
+# DB restart
+alias dbr='sudo /etc/init.d/postgresql-8.3 restart'
+
 # cnuapp cmd aliases
 alias sc='/export/web/cnuapp/script/console'
 alias bcr='/export/web/cnuapp/bin/cnurake'
