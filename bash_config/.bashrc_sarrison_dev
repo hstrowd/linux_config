@@ -1,0 +1,6 @@
+# ~/.bashrc_sarrison_dev
+
+# Side Project Aliases
+alias sarrison_restart="ssh sarrison.com 'cd /Volumes/Macintosh\ HD2/sites/sarrison/;git pull;touch tmp/restart.txt'"
+
+alias ar="sudo apache2ctl restart"

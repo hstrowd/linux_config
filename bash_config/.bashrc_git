@@ -1,0 +1,11 @@
+# ~/.bashrc_git
+
+# Git shortcut aliases
+alias ga="git status | awk '/^# Untracked/,/^$/' | sed 's/\t/@@@/' | grep '@@@' |sed 's/#@@@//'"
+alias gut="git status | awk '/^# Untracked/,/^$/' | grep '^#.*~$' | sed 's/#\t//'"
+alias gm="git status | awk '/^# Changed but not updated:/,/^# Untracked files:/' | grep 'modified:' | sed 's/#\s\+modified:\s\+//g'"
+alias gd="git status | awk '/^# Changed but not updated:/,/^# Untracked files:/' | grep 'deleted:' | sed 's/#\s\+deleted:\s\+//g'"
+
+alias gaa="xargs -n 1 git add"
+alias gra="xargs -n 1 git rm"
+alias rma="xargs -n 1 rm"

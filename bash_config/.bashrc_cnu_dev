@@ -1,4 +1,12 @@
-# ~/.bashrc_dev
+# ~/.bashrc_cnu_dev
+
+# alias for establishing an ssh connection to cnuapp
+alias sshdev='ssh -X cnuapp@hstrowd-dev.chi.cashnetusa.com'
+alias sshlocdev='ssh -X cnuapp@192.168.56.2'
+alias sshrel='ssh -X cnuapp@192.168.56.3'
+
+# vpn alias
+alias vpncnu='sudo vpnc-connect --gateway cnuvpn.cashnetusa.com --id cnu-ra-users --username hstrowd --domain cnu --natt-mode natt' 
 
 # some other alaiases
 alias ew='cd /export/web'
