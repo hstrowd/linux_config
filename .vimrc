@@ -1,23 +1,24 @@
-filetype on  " Automatically detect file types.
+"filetype plugin on  " Automatically detect file types.
+"filetype ident on
 set nocompatible  " We don't want vi compatibility.
  
 " Add recently accessed projects menu (project plugin)
 set viminfo^=!
  
 " Minibuffer Explorer Settings
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1
+"let g:miniBufExplMapWindowNavVim = 1
+"let g:miniBufExplMapWindowNavArrows = 1
+"let g:miniBufExplMapCTabSwitchBufs = 1
+"let g:miniBufExplModSelTarget = 1
  
 " alt+n or alt+p to navigate between entries in QuickFix
 map <silent> <m-p> :cp <cr>
 map <silent> <m-n> :cn <cr>
  
 " Change which file opens after executing :Rails command
-let g:rails_default_file='config/database.yml'
+"let g:rails_default_file='config/database.yml'
  
-syntax enable
+"syntax enable
 
 set cf  " Enable error files & error jumping.
 set clipboard+=unnamed  " Yanks go on clipboard instead.
@@ -55,5 +56,5 @@ set laststatus=2  " Always show status line.
 
 " Setting terminal configuration
 set t_Co=256
-colors ron
-syntax on
+"colors ron
+"syntax on
