@@ -91,9 +91,6 @@ alias ll='ls -lA'
 alias la='ls -A'
 alias l='ls -CF'
 
-# vpn alias
-alias vpncnu='sudo vpnc-connect --gateway cnuvpn.cashnetusa.com --id cnu-ra-users --username hstrowd --domain cnu --natt-mode natt' 
-
 # ack alias
 alias ack='ack-grep -a'
 
@@ -109,4 +106,4 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 # Include any local configurations.
-. ~/.bashrc_local
+. ~/bash_config/.bashrc_local
