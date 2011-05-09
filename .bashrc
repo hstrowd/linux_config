@@ -86,6 +86,9 @@ if [ -x /usr/bin/dircolors ]; then
     #alias egrep='egrep --color=auto'
 fi
 
+# Make emacs run in the console
+alias emacs='emacs -nw'
+
 # some more ls aliases
 alias ll='ls -lA'
 alias la='ls -A'
