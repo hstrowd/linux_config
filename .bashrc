@@ -87,9 +87,9 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # Make emacs run in the console
-alias emacs='emacs -nw'
+#alias emacs='emacs -nw'
 # Required to allow emacs to capture all key bindings
-alias screen='screen -T xterm'
+#alias screen='screen -T xterm'
 
 # some more ls aliases
 alias ll='ls -lA'
