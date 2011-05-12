@@ -29,8 +29,12 @@ alias svusp='sudo sv u /var/service/space'
 alias svdsp='sudo sv d /var/service/space'
 alias svrsp='svdsp && svusp'
 
-# DB restart
-alias dbr='sudo /etc/init.d/postgresql-8.3 restart'
+# DB rebuild
+alias dbrus='/export/web/cnuapp/bin/cnurake db:rebuild name=cnuapp_dev cl=US force=true'
+alias dbrgb='/export/web/cnuapp/bin/cnurake db:rebuild name=cnuapp_dev_gb cl=GB force=true'
+alias dbrau='/export/web/cnuapp/bin/cnurake db:rebuild name=cnuapp_dev_au cl=AU force=true'
+alias dbrca='/export/web/cnuapp/bin/cnurake db:rebuild name=cnuapp_dev_ca cl=CA force=true'
+alias dbrjv='/export/web/cnuapp/bin/cnurake db:rebuild name=cnuapp_dev_jv cl=JV force=true'
 
 # cnuapp cmd aliases
 alias sc='/export/web/cnuapp/script/console'
