@@ -97,7 +97,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # ack alias
-alias ack='ack-grep -a'
+alias ack='ack-grep'
 
 # du alias
 alias du='du -hsc'
