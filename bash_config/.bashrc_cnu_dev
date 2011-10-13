@@ -43,7 +43,7 @@ alias bce='/export/web/cnuapp/bin/cnu_env'
 alias vimce='vim /etc/cnu/cnu_env'
 
 export P4CONFIG=~/.p4config
-export PATH="/sbin:${HOME}/bin:${HOME}/bin/p4v-2009.2.258241/bin:/cnu/bin:${HOME}/dev/scripts:${PATH}"
+export PATH="/sbin:${HOME}/bin:/cnu/bin:${HOME}/dev/scripts:${PATH}"
 
 # cnuapp slave DB connections
 alias slave_us='psql -h slavedb.cashnetusa.com -p 5432 cnuapp_prod hstrowd'

@@ -2,9 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# If not running interactively, don't do anything
-[ -z "$PS1" ] && return
-
 # don't put duplicate lines in the history. See bash(1) for more options
 # don't overwrite GNU Midnight Commander's setting of `ignorespace'.
 export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
@@ -27,6 +24,17 @@ shopt -s checkwinsize
 if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
+
+# Include any non-interactive local configurations.
+. ~/linux_config/bash_config/.bashrc_non_interactive_local
+
+
+########################
+#   Interactive ONLY   #
+########################
+
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
@@ -92,12 +100,9 @@ fi
 #alias screen='screen -T xterm'
 
 # some more ls aliases
-alias ll='ls -lA'
-alias la='ls -A'
-alias l='ls -CF'
-
-# ack alias
-alias ack='ack-grep'
+alias ll='ls -lAG'
+alias la='ls -AG'
+alias l='ls -CFG'
 
 # du alias
 alias du='du -hsc'
@@ -111,4 +116,4 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 # Include any local configurations.
-. ~/bash_config/.bashrc_local
+. ~/linux_config/bash_config/.bashrc_local
