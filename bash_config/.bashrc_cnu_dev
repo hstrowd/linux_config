@@ -2,8 +2,9 @@
 
 # alias for establishing an ssh connection to cnuapp
 alias sshdev='ssh -X cnuapp@hstrowd-dev.chi.cashnetusa.com'
-alias sshlocdev='ssh -X cnuapp@192.168.56.2'
-alias sshrel='ssh -X cnuapp@192.168.56.3'
+alias starttestdev='VBoxManage startvm cnuapp_test_dev --type headless'
+alias stoptestdev='VBoxManage controlvm cnuapp_test_dev acpipowerbutton'
+alias sshtestdev='ssh -X cnuapp@193.168.56.2'
 
 # vpn alias
 alias vpncnu='sudo vpnc-connect --gateway cnuvpn.cashnetusa.com --id cnu-ra-users --username hstrowd --domain cnu --natt-mode natt' 
