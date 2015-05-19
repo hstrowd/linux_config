@@ -33,3 +33,7 @@
 
 # For RVM:
 .rvmrc
+
+
+# Locol Configurations:
+*_local

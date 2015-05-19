@@ -26,7 +26,7 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
 fi
 
 # Include any non-interactive local configurations.
-. ~/linux_config/bash_config/.bashrc_non_interactive_local
+[[ -s ~/linux_config/bash_config/.bashrc_non_interactive_local ]] && . ~/linux_config/bash_config/.bashrc_non_interactive_local
 
 
 ########################
@@ -94,8 +94,9 @@ if [ -x /usr/bin/dircolors ]; then
     #alias egrep='egrep --color=auto'
 fi
 
-# Make emacs run in the console
-#alias emacs='emacs -nw'
+# Always launch emacs in a standalone window
+alias emacs=''
+
 # Required to allow emacs to capture all key bindings
 #alias screen='screen -T xterm'
 
@@ -116,4 +117,4 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 # Include any local configurations.
-. ~/linux_config/bash_config/.bashrc_local
+[[ -s ~/linux_config/bash_config/.bashrc_local ]] && . ~/linux_config/bash_config/.bashrc_local
