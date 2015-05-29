@@ -112,9 +112,15 @@ alias sdu='sudo du -hsc'
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
-if [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
 fi
+
 
 # Include any local configurations.
 [[ -s ~/linux_config/bash_config/.bashrc_local ]] && . ~/linux_config/bash_config/.bashrc_local
+
+
+
+# Ack helper methods.
+alias ack='ack --ignore-file=ext:log'

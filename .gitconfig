@@ -2,4 +2,4 @@
 	name = Harrison Strowd
 	email = hstrowd@gmail.com
 [core]
-	excludesfile = /Users/hstrowd/.gitignore
+	excludesfile = ~/.gitignore

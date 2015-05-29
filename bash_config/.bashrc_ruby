@@ -1,0 +1,5 @@
+# ~/linux_config/bash_config/.bashrc_ruby
+
+eval "$(rbenv init -)"
+
+alias be="bundle exec $@"
